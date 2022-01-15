@@ -77,7 +77,7 @@ section h1 {
     background-color: var(--color-alert);
 }
 
-.clear {
+.reset {
     background-color: var(--color-danger);
 }
 
