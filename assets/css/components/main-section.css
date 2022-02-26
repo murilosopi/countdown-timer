@@ -1,0 +1,10 @@
+.main-section {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+@media (min-width: 768px) {
+  .main-section {
+      font-size: 1.5em;
+  }
+}
