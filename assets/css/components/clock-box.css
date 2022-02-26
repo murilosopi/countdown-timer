@@ -1,10 +1,10 @@
-.box-clock .timer {
+.clock-box .timer {
   display: block;
   font-size: 4em;
   color: var(--color-dark);
 }
 
-.box-clock .time-input {
+.clock-box .time-input {
   position: relative;
   top: 15px;
 }
