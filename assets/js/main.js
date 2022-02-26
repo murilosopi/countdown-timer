@@ -1,8 +1,8 @@
-const btnStart = document.querySelector('button.start');
-const btnPause = document.querySelector('button.pause');
-const btnReset = document.querySelector('button.reset');
-const clock = document.querySelector('.time-remaining');
-const desiredTime = document.querySelector('input.timers-duration');
+const btnStart = document.querySelector('.main-button.-start');
+const btnPause = document.querySelector('.main-button.-pause');
+const btnReset = document.querySelector('.main-button.-reset');
+const clock = document.querySelector('.clock-box .timer');
+const desiredTime = document.querySelector('input.time-input');
 let secondsRemaining;
 let timer;
 const btnResume = document.createElement('button');
@@ -73,7 +73,8 @@ function resumeTimer() {
 };
 
 function createResumeButton() {
-    btnResume.classList.add('resume');
+    btnResume.classList.add('main-button');
+    btnResume.classList.add('-resume');
     btnResume.textContent = 'Resume';
     btnPause.insertAdjacentElement('afterend', btnResume);
 };
