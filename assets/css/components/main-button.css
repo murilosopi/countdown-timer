@@ -1,0 +1,30 @@
+.main-button {
+  padding: 15px 24px;
+  border: none;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 0.7em;
+  color: black;
+  transition: .2s; 
+}
+
+.main-button.-start {
+  background-color: var(--color-success);
+}
+
+.main-button.-pause,.main-button.-resume {
+  background-color: var(--color-alert);
+}
+
+.main-button.-reset {
+  background-color: var(--color-danger);
+}
+
+.main-button:hover {
+  background-color: var(--color-light-gray);
+}
+
+.main-button:active {
+  transition: .2s;
+  transform: scale(1.2);
+}
