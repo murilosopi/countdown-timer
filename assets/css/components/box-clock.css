@@ -1,0 +1,9 @@
+.box-clock .timer {
+  display: block;
+  font-size: 4em;
+  color: var(--color-dark);
+}
+
+.box-clock .controls {
+  margin-bottom: 5px;
+}
