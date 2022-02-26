@@ -4,6 +4,7 @@
   color: var(--color-dark);
 }
 
-.box-clock .controls {
-  margin-bottom: 5px;
+.box-clock .time-input {
+  position: relative;
+  top: 15px;
 }
