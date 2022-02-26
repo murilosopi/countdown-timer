@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Countdown Timer</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/components/container-box.css">
+    <link rel="stylesheet" href="assets/css/components/main-section.css">
+    <link rel="stylesheet" href="assets/css/components/main-title.css">
+    <link rel="stylesheet" href="assets/css/components/main-instruction.css">
+    <link rel="stylesheet" href="assets/css/components/main-instruction.css">
+    <link rel="stylesheet" href="assets/css/components/clock-box.css">
+    <link rel="stylesheet" href="assets/css/components/main-button.css">
+    <link rel="stylesheet" href="assets/css/components/main-controls.css">
+    <link rel="stylesheet" href="assets/css/components/time-input.css">
 </head>
 <body>
     <div class="container-box">
-        <section class="section-content">
+        <section class="main-section">
             <h1 class="main-title">Countdown Timer</h1>
-            <p class="main-instruction">To initiate the countdown, please choose how long the timer should run below:</p>
-            <div class="box-clock">
-                <label class="time">00:00:00</label>
-                <div class="controls">
+            <p>To initiate the countdown, please choose how long the timer should run below:</p>
+            <div class="clock-box">
+                <label class="timer">00:00:00</label>
+                <div class="main-controls">
                     <button class="main-button -start">Start</button>
                     <button class="main-button -pause">Pause</button>
                     <button class="main-button -reset">Reset</button>
                 </div>
-                <input type="number" class="duration" placeholder="Seconds">
+                <input type="number" class="time-input" placeholder="Seconds">
             </div>
         </section>
     </div>
