@@ -1,0 +1,32 @@
+.dark-wrapper {
+  background-color: var(--color-darker);
+  color: var(--color-light-gray);
+}
+
+.dark-wrapper .main-button.-start {
+  background-color: var(--color-dark-success);
+}
+
+.dark-wrapper .main-button.-pause,.main-button.-resume {
+  background-color: var(--color-dark-alert);
+}
+
+.dark-wrapper .main-button.-reset {
+  background-color: var(--color-dark-danger);
+}
+
+.dark-wrapper .main-button:hover {
+  background-color: var(--color-lightless-gray);
+}
+
+.dark-wrapper .clock-box .timer {
+  color: var(--color-hazy-lightblue);
+}
+
+.dark-wrapper .time-input {
+  background-color: var(--color-lightless-gray);
+}
+
+.dark-wrapper .time-input:focus {
+  box-shadow: 0px 0px 5px 2px rgba(148, 148, 148, 0.562);
+}
