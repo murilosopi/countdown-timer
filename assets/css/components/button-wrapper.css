@@ -1,5 +1,5 @@
-.button-wrapper > .main-button{
-  position: fixed;
+.button-wrapper {
+  position: absolute;
   top: 15px;
   right: 20px;
 }
