@@ -4,6 +4,14 @@
     --color-success: hsl(192, 87%, 70%);
     --color-alert: hsl(51, 82%, 75%);
     --color-danger: hsl(0, 82%, 69%);
+    
+    /* Dark mode palette*/
+    --color-darker: rgb(7, 10, 15);
+    --color-hazy-lightblue: rgb(186, 202, 204);
+    --color-lightless-gray: rgb(175, 175, 175);
+    --color-dark-success: rgb(59, 84, 112);
+    --color-dark-alert: rgb(194, 194, 122);
+    --color-dark-danger: rgb(136, 75, 75);
 }
 
 * {
@@ -17,4 +25,9 @@ body {
     background-color: white;
     height: 88vh;
     text-align: center;
+}
+
+body.dark {
+    background-color: var(--color-darker);
+    color: var(--color-light-gray);
 }
