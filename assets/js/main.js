@@ -6,6 +6,8 @@ const desiredTime = document.querySelector('input.time-input');
 let secondsRemaining;
 let timer;
 const btnResume = document.createElement('button');
+const btnDarkMode = document.querySelector('.main-button.-darkmode');
+const btnLightMode = document.querySelector('.main-button.-lightmode');
 
 document.addEventListener('click', (e) => {
     if (e.target == btnReset) {
@@ -23,7 +25,17 @@ document.addEventListener('click', (e) => {
 
     if (e.target == btnResume) {
         resumeTimer();
-    }
+    };
+
+    if (e.target == btnDarkMode) {
+        turnOnDarkMode();
+        showBtnLightMode();
+    };
+
+    if (e.target == btnLightMode) {
+        turnOnLightMode();
+        showBtnDarkMode()
+    };
 });
 
 function getTimeFromSeconds(seconds) {
@@ -82,4 +94,24 @@ function createResumeButton() {
 function setDefaultState() {
     btnResume.remove();
     btnPause.style.display = 'inline-flex';
+};
+
+function turnOnDarkMode() {
+    document.body.style.transition = '.2s';
+    document.body.classList.add('dark-wrapper');
+    btnDarkMode.style.display = 'none';
+};
+
+function showBtnLightMode() {
+    btnLightMode.style.display = 'flex';
+};
+
+function turnOnLightMode() {
+    document.body.style.transition = '.2s';
+    document.body.classList.remove('dark-wrapper');
+    btnLightMode.style.display = 'none';
+};
+
+function showBtnDarkMode() {
+    btnDarkMode.style.display = 'flex';
 };
