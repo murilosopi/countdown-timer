@@ -7,7 +7,7 @@
   background-color: var(--color-dark-success);
 }
 
-.dark-wrapper .main-button.-pause,.main-button.-resume {
+.dark-wrapper .main-button.-pause, .dark-wrapper .main-button.-resume {
   background-color: var(--color-dark-alert);
 }
 
